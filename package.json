@@ -11,9 +11,10 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.1",
     "@chakra-ui/react": "^2.1.2",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.8.2",
+    "@mui/material": "^5.10.1",
     "framer-motion": "^6.3.10",
     "next": "12.1.6",
     "next-seo": "^5.4.0",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.6",
+    "@svgr/webpack": "^6.3.1",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "12.1.6",

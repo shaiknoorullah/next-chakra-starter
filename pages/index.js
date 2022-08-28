@@ -2,15 +2,16 @@
 import {
   Container,
   Box,
-  Flex,
+  // Flex,
   Heading,
   Link,
   Text,
-  Code,
-  useColorModeValue
+  // Button,
+  // Code,
+  // useColorModeValue
 } from '@chakra-ui/react'
 import { NextSeo } from 'next-seo'
-import Card from '../components/cards'
+import { SignupButton } from '../components/buttons/signupButton'
 import Layout from '../components/layouts/layout'
 
 export default function Home() {
@@ -95,62 +96,9 @@ export default function Home() {
                 created using next.js. This template is also seo optimized using
                 next-seo, next-sitemap and uses framer-motion for animations
               </Text>
-              <Text
-                as="description"
-                fontFamily="gilroy"
-                fontSize="1.3rem"
-                mt="2rem"
-              >
-                Get started by editing{' '}
-                <Code
-                  fontSize="1.1rem"
-                  bgColor={useColorModeValue('teal.200', '#f6ad55')}
-                  borderRadius="md"
-                  py="0.2rem"
-                  px="0.5rem"
-                  color={useColorModeValue('blackAlpha.900', 'blackAlpha.800')}
-                >
-                  {' '}
-                  pages.index.js
-                </Code>
-              </Text>
             </Box>
-
-            <Flex
-              flexWrap="wrap"
-              justifyContent="center"
-              alignItems="center"
-              maxW="800px"
-            >
-              <Card
-                props={{
-                  title: 'Documentation',
-                  desc: 'Find in-depth information about Next.js features and API.',
-                  href: 'https://nextjs.org/docs'
-                }}
-              />
-              <Card
-                props={{
-                  title: 'Learn',
-                  desc: 'Learn about Next.js in an interactive course with quizzes!',
-                  href: 'https://nextjs.org/learn'
-                }}
-              />
-              <Card
-                props={{
-                  title: 'Example',
-                  desc: 'Discover and deploy boilerplate example Next.js projects.',
-                  href: 'https://github.com/vercel/next.js/tree/canary/examples'
-                }}
-              />
-              <Card
-                props={{
-                  title: 'Deploy',
-                  desc: 'Instantly deploy your Next.js site to a public URL with Vercel.',
-                  href: 'https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-                }}
-              />
-            </Flex>
+            
+            <SignupButton />
           </Container>
         </main>
       </Box>
